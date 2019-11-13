@@ -1,9 +1,9 @@
 # TCC
-sistema de consulta para idosos
+sistema de consulta para escolas
 
 proporcionando uma consultar por nome, QRcode e cartão RFID.
 
-projeto direcionado para asilos, mas pode ser utilizados em vários ambientes.
+projeto direcionado para escolas, mas pode ser utilizados em vários ambientes.
 
 Inclui:
 Cadastro
