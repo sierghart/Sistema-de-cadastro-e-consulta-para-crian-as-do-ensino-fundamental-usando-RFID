@@ -20,7 +20,7 @@ endif;
                 <tbody>
                     <?php
                     $nome = $_SESSION['nome'];
-                    $sql = "SELECT * FROM pacientes WHERE nome = '$nome'";
+                    $sql = "SELECT * FROM alunos WHERE nome = '$nome'";
                     $resultado = mysqli_query($connect, $sql);
 
                     if (mysqli_num_rows($resultado) > 0) :
@@ -35,13 +35,8 @@ endif;
                         </tr>
 
                         <tr>
-                            <th>Sobre Nome:</th>
-                            <td><?php echo $dados['sobrenome']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Email:</th>
-                            <td><?php echo $dados['email']; ?></td>
+                            <th>Número do responsável:</th>
+                            <td><?php echo $dados['numero_responsavel']; ?></td>
                         </tr>
 
                         <tr>
@@ -62,7 +57,7 @@ endif;
 
             </table>
             <br>
-            <a href="consulta" class="btn waves-effect waves-light">Votlar</a>
+            <a href="consulta" class="btn waves-effect waves-light">Voltar</a>
 
 
         </div>

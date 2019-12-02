@@ -39,7 +39,7 @@ if (isset($_POST['btn-entrar'])) :
             $_SESSION['logado_adm'] = true;
             header('Location: ../painel_administrador');
         else :
-            $_SESSION['mensagem'] = "email ou senha incorretos";
+            $_SESSION['mensagem'] = "usuário ou senha incorretos";
             header('Location: ../login');
         endif;
     endif;

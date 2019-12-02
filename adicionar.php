@@ -18,14 +18,8 @@ endif;
         <form action="php_action/create.php" method="POST">
             <div class = "input-field col s12">
                 <input type="text" name="nome" id="nome" class="validate" autocomplete="off"
-                 data-length="10" maxlength = "10">
-                <label for="nome">Nome</label>
-            </div>
-
-            <div class = "input-field col s12">
-                <input type="text" name="sobrenome" id="sobrenome" class="validate" autocomplete="off"
-                 data-length="30" maxlength = "30">
-                <label for="sobrenome">SobreNome</label>
+                 data-length="60" maxlength = "60">
+                <label for="nome">Nome completo</label>
             </div>
 
             <div class = "input-field col s12">

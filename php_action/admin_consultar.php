@@ -23,7 +23,7 @@ if (isset($_GET['btn-consultar'])) :
         //get name for verification in database
         $nome = mysqli_escape_string($connect, $_GET['nome']);
 
-        $sql = "SELECT * FROM pacientes WHERE nome = '$nome'";
+        $sql = "SELECT * FROM alunos WHERE nome = '$nome'";
         $resultado = mysqli_query($connect, $sql);
 
         //if the patient exists, the results will be shown, otherwise it will return to the consultation page.

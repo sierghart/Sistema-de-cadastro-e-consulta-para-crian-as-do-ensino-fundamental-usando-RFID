@@ -19,7 +19,6 @@ if (isset($_POST['btn-editar'])) :
 
     //get information for patient edition
     $nome = clear($_POST['nome']);
-    $sobrenome = clear($_POST['sobrenome']);
     $nascimento = clear($_POST['data']);
     $remedios = clear($_POST['remedios']);
     $endereco = clear($_POST['endereço']);
@@ -33,14 +32,14 @@ if (isset($_POST['btn-editar'])) :
 
 
     //if everything is correct put the information in the database
-    $sql = "UPDATE pacientes SET nome ='$nome', sobrenome = '$sobrenome', email = '$email'
+    $sql = "UPDATE alunos SET nome ='$nome', email = '$email'
     , idade = '$idade', doenças = '$doencas', remedios = '$remedios', endereço = '$endereco',
     nome_responsavel = '$nome_responsavel', numero_responsavel = '$numero_responsavel', data_nascimento = '$nascimento'
      WHERE id = '$id'";
 
     if (mysqli_query($connect, $sql)) :
         $_SESSION['mensagem'] = 'Atualizado com sucesso';
-        header('Location: ../dados_privados');
+        header('Location: ../alunos');
     else :
         $_SESSION['mensagem'] = 'Erro ao Atualizar';
         header('Location: ../dados_privados');

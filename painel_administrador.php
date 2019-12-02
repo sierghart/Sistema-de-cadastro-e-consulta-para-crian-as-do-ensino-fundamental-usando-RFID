@@ -13,13 +13,15 @@ if(!isset($_SESSION['logado_adm'])):
 endif;
 
 ?>
-
+        <h2 id="painel">Painel administrativo</h2>
     <div class="row container  center-align">
+
+        
 
         <div class="col s12 m6 push-m3">
 
             <div class="col s6 m6 pull-m3">
-                <a href="consulta_admin" class="btn-large waves-effect waves-light blue ">Consultar</a>
+                <a href="alunos" class="btn-large waves-effect waves-light blue ">alunos</a>
             </div>
 
             <div class="col s6 m6 push-m3">
@@ -45,6 +47,12 @@ endif;
 #sair{
     position: absolute;
     top: 10000%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#painel{
+    position: absolute;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

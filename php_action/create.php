@@ -18,7 +18,6 @@ if(isset($_POST['btn-cadastrar'])):
 
     //get information for patient creation
     $nome = clear($_POST['nome']);
-    $sobrenome = clear($_POST['sobrenome']);
     $nascimento = clear($_POST['data']);
     $remedios = clear($_POST['remedios']);
     $endereco = clear($_POST['endereço']);
@@ -32,10 +31,10 @@ if(isset($_POST['btn-cadastrar'])):
     
     
     //creates patient with the acquired information
-    $sql = "INSERT INTO pacientes 
-    (nome, sobrenome, email, idade, doenças, remedios, endereço, nome_responsavel, numero_responsavel, data_nascimento, tipo_sanguineo)
+    $sql = "INSERT INTO alunos 
+    (nome, email, idade, doenças, remedios, endereço, nome_responsavel, numero_responsavel, data_nascimento, tipo_sanguineo)
      VALUES 
-     ('$nome', '$sobrenome', '$email', '$idade', '$doencas', '$remedios', '$endereco', '$nome_responsavel', '$numero_responsavel', '$nascimento', '$sangue')";
+     ('$nome', '$email', '$idade', '$doencas', '$remedios', '$endereco', '$nome_responsavel', '$numero_responsavel', '$nascimento', '$sangue')";
 
 
 //if all information is correct the patient will be created and QRcode will be generated
@@ -44,8 +43,8 @@ if(isset($_POST['btn-cadastrar'])):
         $_SESSION['nome'] = $nome;
         ?>
         <script>
-            window.open("http://localhost/crud/28-crud/painel_administrador", "_parent")
-            window.open("http://localhost/crud/28-crud/qrcode", "_blank");
+            window.open("http://localhost/escola/painel_administrador", "_parent")
+            window.open("http://localhost/escola/qrcode", "_blank");
         </script>
         <?php
     

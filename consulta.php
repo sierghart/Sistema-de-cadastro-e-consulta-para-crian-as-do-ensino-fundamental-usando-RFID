@@ -14,7 +14,7 @@ unset($_SESSION['nome']);
 <div class="row container center-align">
     <div class="col s12 m6 push-m3">
         <div class="input-field col s12">
-            <input type="text" placeholder="Nome" name="nome" id="nome"  autocomplete="off" class="validate" data-length="15" maxlength = "15">
+            <input type="text" placeholder="Nome completo" name="nome" id="nome"  autocomplete="off" class="validate" data-length="60" maxlength = "60">
             <label for="nome">Nome completo</label>
         </div>
         <div class="col s12">
