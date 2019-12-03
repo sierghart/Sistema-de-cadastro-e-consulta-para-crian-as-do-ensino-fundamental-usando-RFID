@@ -1,7 +1,9 @@
 <?php
 //database connection
 $servername = "localhost";
+//name of user
 $username = "edmilson";
+//password of user
 $password = "ed041299";
 $db_name = "crud";
 

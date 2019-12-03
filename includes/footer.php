@@ -16,6 +16,14 @@
         
       });
 
+      //modal
+      const elemsModal = document.querySelectorAll(".modal");
+      const instancesModal = M.Modal.init(elemsModal, {
+        preventScrolling: false,
+        opacity: 0.8,
+      }); 
+
+
     </script>
 
     </body>

@@ -18,7 +18,6 @@ function clear($input)
 if (isset($_POST['btn-editar'])) :
 
     //get information for patient edition
-    $nome = clear($_POST['nome']);
     $nascimento = clear($_POST['data']);
     $remedios = clear($_POST['remedios']);
     $endereco = clear($_POST['endereço']);
@@ -32,7 +31,7 @@ if (isset($_POST['btn-editar'])) :
 
 
     //if everything is correct put the information in the database
-    $sql = "UPDATE alunos SET nome ='$nome', email = '$email'
+    $sql = "UPDATE alunos SET email = '$email'
     , idade = '$idade', doenças = '$doencas', remedios = '$remedios', endereço = '$endereco',
     nome_responsavel = '$nome_responsavel', numero_responsavel = '$numero_responsavel', data_nascimento = '$nascimento'
      WHERE id = '$id'";

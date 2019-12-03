@@ -28,10 +28,6 @@ endif;
         <h3 class="light"> Editar aluno </h3>
         <form action="php_action/update" method="POST">
             <input type="hidden" name="id" value="<?php echo $dados['id'];?>">
-            <div class = "input-field col s12">
-                <input type="text" name="nome" id="nome" value="<?php echo $dados['nome'];?>">
-                <label for="nome">Nome completo</label>
-            </div>
 
             <div class = "input-field col s12">
                 <input type="text" name="idade" id="idade" value="<?php echo $dados['idade'];?>">
