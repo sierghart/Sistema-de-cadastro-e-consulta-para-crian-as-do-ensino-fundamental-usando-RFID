@@ -68,8 +68,8 @@ if (isset($_POST['btn-cadastrar'])) :
                     $_SESSION['nome'] = $nome;
                     ?>
                     <script>
-                        window.open("http://192.168.25.208/escola/painel_administrador", "_parent")
-                        window.open("http://192.168.25.208/escola/qrcode", "_blank");
+                        window.open("http://<?php echo $_SERVER['SERVER_NAME'] ?>/escola/painel_administrador", "_parent")
+                        window.open("http://<?php echo $_SERVER['SERVER_NAME'] ?>/escola/qrcode", "_blank");
                     </script>
                 <?php
 

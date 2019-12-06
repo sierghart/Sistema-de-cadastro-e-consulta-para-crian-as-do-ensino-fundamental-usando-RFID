@@ -27,7 +27,7 @@ endif;
         <script>
             <?php $nome = $_SESSION['nome']; ?>
             new QRCode(document.getElementById("qrcode"), {
-                text: "<?php echo 'http://192.168.25.208/escola/php_action/consultar?nome='.urlencode($nome).'&btn-consultar='; ?>",
+                text: "<?php echo 'http://'.$_SERVER['SERVER_NAME'].'/escola/php_action/consultar?nome='.urlencode($nome).'&btn-consultar='; ?>",
                 width: 100,
                 height: 100,
 
