@@ -57,7 +57,7 @@ endif;
 
             <div class = "input-field col s12">
                 <input type="number" name="numero_responsavel" id="numero_responsavel" class="validate"
-                value="<?php echo $dados['numero_responsavel'];?>" data-length="9" maxlength = "9">
+                value="<?php echo $dados['numero_responsavel'];?>" data-length="9" maxlength="9" onkeyPress="if(this.value.length==9) return false;">
                 <label for="numero_responsavel">Número do responsável</label>
             </div>
 

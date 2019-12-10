@@ -85,7 +85,7 @@ session_start();
                 <div class="modal-content">
                     <h4>AVISOS</h4>
                     <p>
-                        <li style="font-size:110%"><b>Verifique se todos os dados estão corretss</b></li>
+                        <li style="font-size:110%"><b>Verifique se todos os dados estão corretos</b></li>
                         <li style="font-size:110%"><b>Após verificar os dados, coloque o cartão na leitora e clique em "finalizar"</b></li>
                     </p>
                 </div>
