@@ -1,15 +1,20 @@
-# TCC
+# Sistema de cadastro e consulta para crianças do ensino fundamental usando RFID
+
+## Feito por: Islan Pedro e Edmilson Júnior
+
 sistema de consulta para escolas
 
-proporcionando uma consultar por nome, QRcode e cartão RFID.
+Usado como projeto de conclusão de curso dos criadores.
+
+proporcionando uma consultar por nome e QRcode.
 
 projeto direcionado para escolas, mas pode ser utilizados em vários ambientes.
 
 Inclui:
-Cadastro
-Consulta básica
-Consulta completa
-modificação de dados
+Cadastro;
+Consulta básica;
+Consulta completa;
+modificação de dados;
 
 
 ### Index do site:
@@ -51,8 +56,11 @@ modificação de dados
 
 # Objetivos a alcançar:
 
- **1.** Fazer a integração do cadastro com uma API de criaçã ode QRcode; :heavy_check_mark:
+ **1.** Fazer a integração do cadastro com uma API de criação de QRcode; :heavy_check_mark:
  
-  **2.** Fazer a integração do cadastro com o cartão RFID usando a ESP32; :heavy_exclamation_mark:
+  **2.** Fazer a integração do cadastro com o cartão RFID usando a ESP32; :heavy_check_mark:
+  
+ OBS: O controle de acesso com log foi feito e testado e está funcionando, mas não foi apresentado na defesa do trabalho.
+ OBS2: Algumas imagens estão desatualizadas.
 
 
