@@ -56,7 +56,7 @@ void loop()
 
 
 String conteudo= "";
- 
+  
   for (byte i = 0; i < mfrc522.uid.size; i++) 
   {
      conteudo.concat(String(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " "));
@@ -76,7 +76,7 @@ conteudo.toUpperCase();
 
   String mandar = "teste=" + conteudo;
 
-  http.begin("http://192.168.25.228/escola/php_action/cartao.php");
+  http.begin("http://192.168.25.228/escola/logs/log.php");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
   int httpResponseCode =  http.POST(mandar);
@@ -85,17 +85,15 @@ conteudo.toUpperCase();
   if(httpResponseCode>0){
       String response = http.getString();
       
-      
+      //Serial.println(httpResponseCode);
       Serial.println(response);
-    
-    
         
       }
 
       http.end();
       
 
-      delay(1000);
+      delay(2000);
      
 
   
