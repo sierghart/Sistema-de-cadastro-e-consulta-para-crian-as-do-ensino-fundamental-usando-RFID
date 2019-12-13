@@ -17,10 +17,10 @@ if (isset($_POST['btn-deletar'])) :
     $sql = "DELETE FROM alunos WHERE id = '$id'";
 
     if (mysqli_query($connect, $sql)) :
-        $_SESSION['mensagem'] = 'Deletado com sucesso';
+        $_SESSION['mensagem'] = 'Excluído com sucesso';
         header('Location: ../alunos');
     else :
-        $_SESSION['mensagem'] = 'Erro ao deletar';
+        $_SESSION['mensagem'] = 'Erro ao excluir';
         header('Location: ../alunos');
     endif;
 

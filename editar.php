@@ -11,7 +11,7 @@ if(!isset($_SESSION['logado_adm'])):
     header('Location: login');
 endif;
 
-
+date_default_timezone_set('America/Sao_Paulo');
 //check if 'id' was passed by GET
 if(isset($_GET['id'])):
     $id = mysqli_escape_string($connect, $_GET['id']);
@@ -35,7 +35,7 @@ endif;
             </div>
 
             <div class = "input-field col s12">
-                <input type="date" name="data" id="data" value="<?php echo date("d/m/Y", strtotime($dados['data_nascimento']));?>">
+                <input type="text" name="data" id="data" value="<?php echo date("d/m/Y", strtotime($dados['data_nascimento']));?>" disabled>
                 <label for="data">Data de nascimento do aluno</label>
             </div>
 

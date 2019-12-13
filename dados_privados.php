@@ -38,14 +38,14 @@ endif;
          <div id="modal<?php echo $dados['id'];?>" class="modal">
                             <div class="modal-content">
                             <h4>Opa!</h4>
-                            <p>Tem certeza que deseja excluir esse aluno?</p>
+                            <p>Tem certeza que deseja excluir <?php echo $nome ?>?</p>
                             </div>
                             <div class="modal-footer">
                             
 
                             <form action="php_action/delete.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $dados['id'];?>">
-                                <button type="submit" name=btn-deletar class="btn red">Sim, quero deletar</button>
+                                <button type="submit" name=btn-deletar class="btn red">Sim, quero excluir</button>
                                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>   
                             </form>    
 
